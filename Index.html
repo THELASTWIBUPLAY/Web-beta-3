@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meraki Studio — Company Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk icon sosial media footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- TOP NAVIGATION (DARK GLASS / TEMBUS PANDANG) -->
+  <!-- ========================================== -->
+  <nav class="top">
+    <div class="wrap">
+      <a href="#" class="brand"><span class="dot"></span>Meraki Studio</a>
+      
+      <!-- Nav Links Desktop -->
+      <div class="navlinks">
+        <a href="#visimisi">About</a>
+        <a href="#layanan">Services</a>
+        <a href="#howwework">Process</a>
+        <a href="#project">Games</a>
+        <a href="#tim">Team</a>
+        <a href="#client">Clients</a>
+        <a href="#get-started">Get Started</a>
+        <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- FULLSCREEN MOBILE OVERLAY MENU            -->
+  <!-- ========================================== -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <span class="mobile-menu-label">NAVIGATION</span>
+      
+      <div class="mobile-links">
+        <a href="#visimisi"><span class="nav-num">01</span> ABOUT</a>
+        <a href="#layanan"><span class="nav-num">03</span> SERVICES</a>
+        <a href="#howwework"><span class="nav-num">04</span> PROCESS</a>
+        <a href="#project"><span class="nav-num">05</span> GAMES</a>
+        <a href="#tim"><span class="nav-num">06</span> TEAM</a>
+        <a href="#client"><span class="nav-num">07</span> CLIENTS</a>
+        <a href="#get-started"><span class="nav-num">08</span> GET STARTED</a>
+      </div>
+
+      <button class="mobile-menu-cta open-contact-trigger">CONTACT US ➔</button>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MAIN WRAPPER: STACKED BACKGROUND LAYERS    -->
+  <!-- ========================================== -->
+  <main class="stacked-page">
+
+    <!-- LAYER 1: HERO SECTION -->
+    <section class="stack-section hero" id="hero">
+      <div class="bg-wave-layer" style="z-index: 1;">
+        <img src="assets/1.png" alt="Layer 1 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="reveal">
+          <div class="eyebrow">Company Profile</div>
+          <h1>Kami membangun<br><em>karya</em> yang bekerja.</h1>
+          <p class="lead">Studio kreatif yang membantu bisnis tumbuh lewat desain, teknologi, dan strategi yang dipikirkan matang — dari ide sampai rilis.</p>
+          <div class="cta-row">
+            <a href="#project" class="btn solid">Lihat Project</a>
+            <button class="btn ghost open-contact-trigger">Hubungi Kami</button>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat">
+              <span class="stat-num" data-count="4"><span class="num-val">0</span><span class="stat-suffix">+</span></span>
+              <span class="stat-label">Game Dirilis</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="7"><span class="num-val">0</span></span>
+              <span class="stat-label">Spesialis Kreatif</span>
+            </div>
+            <div class="stat">
+              <span class="stat-text">Malang, ID</span>
+              <span class="stat-label">Studio Berbasis</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="moon"></div>
+          <svg class="hillsvg" viewBox="0 0 400 420" preserveAspectRatio="xMidYMax slice">
+            <path d="M0 300 Q100 240 200 290 T400 260 V420 H0 Z" fill="#276679" opacity="0.9"></path>
+            <path d="M0 350 Q120 300 220 340 T400 320 V420 H0 Z" fill="#142F37"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 2: VISI MISI -->
+    <section class="stack-section visimisi" id="visimisi">
+      <div class="bg-wave-layer" style="z-index: 2;">
+        <img src="assets/2.png" alt="Layer 2 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Visi &amp; Misi</div>
+          <h2>Arah yang kami pegang teguh.</h2>
+        </div>
+        <div class="vm-grid reveal-group">
+          <div class="vm-card reveal">
+            <span class="num">Visi</span>
+            <h3>Menjadi mitra kreatif tepercaya bagi bisnis yang ingin tumbuh.</h3>
+            <p>Kami ingin dikenal sebagai studio yang mengutamakan kualitas kerja dan hubungan jangka panjang dengan klien.</p>
+          </div>
+          <div class="vm-card reveal">
+            <span class="num">Misi</span>
+            <h3>Menghadirkan solusi digital yang sederhana, jelas, dan efektif.</h3>
+            <p>Setiap project kami kerjakan dengan proses yang transparan, komunikasi terbuka, dan hasil yang terukur.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 3: LAYANAN -->
+    <section class="stack-section layanan" id="layanan">
+      <div class="bg-wave-layer" style="z-index: 3;">
+        <img src="assets/3.png" alt="Layer 3 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Layanan</div>
+          <h2>Apa yang bisa kami bantu.</h2>
+          <p>Layanan inti yang kami kerjakan untuk klien, dari riset awal sampai produk berjalan.</p>
+        </div>
+        <div class="service-list reveal-group">
+          <div class="service-row reveal"><div class="service-left"><span class="idx">01</span><h3>Desain UI/UX</h3></div><p>Riset pengguna, wireframe, hingga desain antarmuka siap pakai.</p></div>
+          <div class="service-row reveal"><div class="service-left"><span class="idx">02</span><h3>Pengembangan Web &amp; Game</h3></div><p>Membangun produk digital yang cepat, rapi, dan responsif.</p></div>
+          <div class="service-row reveal"><div class="service-left"><span class="idx">03</span><h3>Branding &amp; Ilustrasi</h3></div><p>Identitas visual dan karakter bernyawa di seluruh platform.</p></div>
+          <div class="service-row reveal"><div class="service-left"><span class="idx">04</span><h3>Konsultasi Strategi Digital</h3></div><p>Membantu menyusun arah produk dan optimasi rilis.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 4: CARA KERJA / HOW WE WORK -->
+    <section class="stack-section howwework" id="howwework">
+      <div class="bg-wave-layer" style="z-index: 4;">
+        <img src="assets/4.png" alt="Layer 4 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Cara Kerja</div>
+          <h2>Proses kerja kami, dari awal sampai rilis.</h2>
+        </div>
+        <div class="steps reveal-group">
+          <div class="step reveal"><span class="num">01</span><h3>Discovery</h3><p>Memahami kebutuhan, target, dan batasan project bersama klien.</p></div>
+          <div class="step reveal"><span class="num">02</span><h3>Desain</h3><p>Menyusun konsep, wireframe, dan tampilan visual final.</p></div>
+          <div class="step reveal"><span class="num">03</span><h3>Pengembangan</h3><p>Membangun produk sesuai desain dengan iterasi berkala.</p></div>
+          <div class="step reveal"><span class="num">04</span><h3>Rilis &amp; Dukungan</h3><p>Peluncuran produk dan pendampingan setelah rilis.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 5: GAME CAROUSEL -->
+    <section class="stack-section projects" id="project">
+      <div class="bg-wave-layer" style="z-index: 5;">
+        <img src="assets/5.png" alt="Layer 5 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Game Library</div>
+          <h2>Koleksi game pilihan kami.</h2>
+          <p>Geser ke samping untuk menjelajahi karya game unggulan kami.</p>
+        </div>
+
+        <div class="carousel-container reveal">
+          <button class="carousel-nav prev" id="prevBtn" aria-label="Sebelumnya">❮</button>
+          <div class="carousel-track" id="gameTrack">
+            <!-- Game 1 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">RPG Adventure</span>
+                <img src="assets/game2.jpeg" alt="Stone Guardian" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Stone Guardian</h3>
+                <p>Petualangan epik di dunia di mana bebatuan purba bangkit dan memiliki nyawa.</p>
+              </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">Mobile Puzzle</span>
+                <img src="assets/game2.jpeg" alt="Jelly Builders" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Jelly Builders</h3>
+                <p>Susun blok jelly setinggi mungkin dalam game berbasis fisika yang santai.</p>
+              </div>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">Action Arcade</span>
+                <img src="assets/game2.jpeg" alt="Space Candy" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Space Candy</h3>
+                <p>Aksi tembak-menembak antariksa klasik dengan balutan warna-warni cerah.</p>
+              </div>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">Tactical Co-op</span>
+                <img src="assets/game2.jpeg" alt="Echoes of Astra" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Echoes of Astra</h3>
+                <p>Game strategi kooperatif menembus reruntuhan magis dan menghadapi monster kegelapan.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-nav next" id="nextBtn" aria-label="Berikutnya">❯</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 6: DAFTAR TIM -->
+    <section class="stack-section team" id="tim">
+      <div class="bg-wave-layer" style="z-index: 6;">
+        <img src="assets/6.png" alt="Layer 6 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Daftar Tim</div>
+          <h2>Orang-orang di balik studio.</h2>
+          <p>Pilih salah satu profil untuk melihat peran dan karya mereka.</p>
+        </div>
+
+        <div class="team-showcase reveal">
+          <!-- Grid Avatar Roster -->
+          <div class="team-roster" id="teamRoster">
+            <button class="roster-avatar active" data-index="0" aria-label="Budi Santoso">
+              <img src="assets/member_0000s_0006_Layer3.png" alt="Budi Santoso">
+            </button>
+            <button class="roster-avatar" data-index="1" aria-label="Arif Hidayat">
+              <img src="assets/member_0000s_0005_Layer6.png" alt="Arif Hidayat">
+            </button>
+            <button class="roster-avatar" data-index="2" aria-label="Gatot Prasetyo">
+              <img src="assets/member_0000s_0004_Layer7.png" alt="Gatot Prasetyo">
+            </button>
+            <button class="roster-avatar" data-index="3" aria-label="Dimas Arya">
+              <img src="assets/member_0000s_0003_Layer9.png" alt="Dimas Arya">
+            </button>
+            <button class="roster-avatar" data-index="4" aria-label="Kevin Wijaya">
+              <img src="assets/member_0000s_0002_Layer10.png" alt="Kevin Wijaya">
+            </button>
+            <button class="roster-avatar" data-index="5" aria-label="Risa Kartika">
+              <img src="assets/member_0000s_0001_Layer11.png" alt="Risa Kartika">
+            </button>
+            <button class="roster-avatar" data-index="6" aria-label="Nadia Putri">
+              <img src="assets/member_0000s_0000_Layer12.png" alt="Nadia Putri">
+            </button>
+          </div>
+
+          <!-- Featured Bio Display -->
+          <div class="team-featured" id="teamFeatured">
+            <div class="featured-ring">
+              <img id="featuredImg" src="assets/member_0000s_0006_Layer3.png" alt="Featured Member">
+            </div>
+            <div class="featured-info-box">
+              <h3 id="featuredName">Budi Santoso</h3>
+              <div class="role-wrapper">
+                <span class="role-badge" id="featuredRole">Lead Illustrator &amp; Art Director</span>
+              </div>
+              <p id="featuredBio">Mengatur arah visual, konsep karakter, dan menciptakan gaya seni khas Meraki Studio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 7: TOP CLIENT -->
+    <section class="stack-section clients" id="client">
+      <div class="bg-wave-layer" style="z-index: 7;">
+        <img src="assets/7.png" alt="Layer 7 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Top Client</div>
+          <h2>Dipercaya oleh berbagai tim.</h2>
+        </div>
+        
+        <div class="client-grid reveal-group">
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=SANGNILA" alt="Sangnila" class="client-logo"></div>
+            <span class="client-desc">Arts Academy</span>
+          </div>
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=ANYMATE" alt="Anymate" class="client-logo"></div>
+            <span class="client-desc">3D Animation Studio</span>
+          </div>
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=MANIMUKI" alt="Mani Muki" class="client-logo"></div>
+            <span class="client-desc">Creative Production</span>
+          </div>
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=MONSTA" alt="Monsta" class="client-logo"></div>
+            <span class="client-desc">Entertainment Studio</span>
+          </div>
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=RANS" alt="RANS" class="client-logo"></div>
+            <span class="client-desc">Animation Studio</span>
+          </div>
+          <div class="client-card reveal">
+            <div class="client-logo-box"><img src="https://dummyimage.com/200x60/276679/FFFFFF&text=MIZOLLA" alt="Mizolla" class="client-logo"></div>
+            <span class="client-desc">Interactive Agency</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYER 8: CTA BANNER / GET STARTED -->
+    <section class="stack-section cta-banner" id="get-started">
+      <div class="bg-wave-layer" style="z-index: 8;">
+        <img src="assets/8.png" alt="Layer 8 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="cta-inner reveal">
+          <div class="eyebrow">Mulai Sekarang</div>
+          <h2>Siap membangun karya berikutnya bersama kami?</h2>
+          <p>Ceritakan ide Anda, dan mari kita wujudkan bersama tim Meraki Studio.</p>
+          <button class="btn solid btn-cta-contact open-contact-trigger">Hubungi Kami Sekarang</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- SLIDE-IN CONTACT DRAWER (KANAN KE KIRI)    -->
+  <!-- ========================================== -->
+  <div class="contact-drawer-overlay" id="contactOverlay"></div>
+  <aside class="contact-drawer" id="contactDrawer" aria-hidden="true">
+    <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Form Kontak">&times;</button>
+    
+    <div class="drawer-content">
+      <div class="eyebrow">Contact Person</div>
+      <h2>Mari mulai obrolan project Anda.</h2>
+      <p>Ceritakan ide atau kebutuhan Anda, kami akan segera merespons.</p>
+
+      <form class="contactform">
+        <div class="field">
+          <label for="nm">Nama</label>
+          <input id="nm" type="text" placeholder="Nama Anda" required>
+        </div>
+        <div class="field">
+          <label for="em">Email</label>
+          <input id="em" type="email" placeholder="email@contoh.com" required>
+        </div>
+        <div class="field">
+          <label for="ms">Pesan</label>
+          <textarea id="ms" placeholder="Ceritakan project Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
+      </form>
+
+      <div class="drawer-info">
+        <div class="info-item">
+          <span>Email</span>
+          <a href="mailto:hello@merakistudio.id">hello@merakistudio.id</a>
+        </div>
+        <div class="info-item">
+          <span>Telepon</span>
+          <span>+62 812-3456-7890</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- SITE FOOTER (MULTI-KOLOM GELAP)            -->
+  <!-- ========================================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <!-- Kolom Brand -->
+        <div class="footer-col brand-col">
+          <h3>MERAKI STUDIO</h3>
+          <p>Crafting immersive digital experiences across the universe.</p>
+          <a href="mailto:contact@merakistudio.id" class="footer-email">
+            <i class="fa-regular fa-envelope"></i> contact@merakistudio.id
+          </a>
+        </div>
+
+        <!-- Kolom Explore -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#project">Games</a></li>
+            <li><a href="#layanan">Services</a></li>
+            <li><a href="#visimisi">Presskit</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#visimisi">About Us</a></li>
+            <li><a href="#howwework">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" class="open-contact-trigger">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Connect -->
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <p class="social-note">Follow us for updates on our latest projects!</p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <span>© 2026 Meraki Studio. All rights reserved.</span>
+        <span>Made with love in Malang, Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
