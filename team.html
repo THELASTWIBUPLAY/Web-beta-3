@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team — Meraki Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk icon sosial media footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- TOP NAVIGATION (DARK GLASS / TEMBUS PANDANG) -->
+  <!-- ========================================== -->
+  <nav class="top">
+    <div class="wrap">
+      <a href="index.html" class="brand"><span class="dot"></span>Meraki Studio</a>
+      
+      <!-- Nav Links Desktop -->
+      <div class="navlinks">
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="games.html">Games</a>
+        <a href="team.html" class="active">Team</a>
+        <a href="get-started.html">Get Started</a>
+        <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- FULLSCREEN MOBILE OVERLAY MENU            -->
+  <!-- ========================================== -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <span class="mobile-menu-label">NAVIGATION</span>
+      
+      <div class="mobile-links">
+        <a href="index.html"><span class="nav-num">01</span> HOME</a>
+        <a href="services.html"><span class="nav-num">02</span> SERVICES</a>
+        <a href="process.html"><span class="nav-num">03</span> PROCESS</a>
+        <a href="games.html"><span class="nav-num">04</span> GAMES</a>
+        <a href="team.html" class="active"><span class="nav-num">05</span> TEAM</a>
+        <a href="get-started.html"><span class="nav-num">06</span> GET STARTED</a>
+      </div>
+
+      <button class="mobile-menu-cta open-contact-trigger">CONTACT US ➔</button>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MAIN WRAPPER                                -->
+  <!-- ========================================== -->
+  <main class="stacked-page">
+
+<section class="stack-section team" id="tim">
+      <div class="bg-wave-layer" style="z-index: 5;">
+        <img src="assets/6.png" alt="Layer 5 Background" class="wave-shape">
+      </div>
+      <div class="wrap content-layer">
+        <div class="sec-head reveal">
+          <div class="eyebrow">Daftar Tim</div>
+          <h2>Orang-orang di balik studio.</h2>
+          <p>Pilih salah satu profil untuk melihat peran dan karya mereka.</p>
+        </div>
+
+        <div class="team-showcase reveal">
+          <!-- Grid Avatar Roster -->
+          <div class="team-roster" id="teamRoster">
+            <button class="roster-avatar active" data-index="0" aria-label="Budi Santoso">
+              <img src="assets/member_0000s_0006_Layer3.png" alt="Budi Santoso">
+            </button>
+            <button class="roster-avatar" data-index="1" aria-label="Arif Hidayat">
+              <img src="assets/member_0000s_0005_Layer6.png" alt="Arif Hidayat">
+            </button>
+            <button class="roster-avatar" data-index="2" aria-label="Gatot Prasetyo">
+              <img src="assets/member_0000s_0004_Layer7.png" alt="Gatot Prasetyo">
+            </button>
+            <button class="roster-avatar" data-index="3" aria-label="Dimas Arya">
+              <img src="assets/member_0000s_0003_Layer9.png" alt="Dimas Arya">
+            </button>
+            <button class="roster-avatar" data-index="4" aria-label="Kevin Wijaya">
+              <img src="assets/member_0000s_0002_Layer10.png" alt="Kevin Wijaya">
+            </button>
+            <button class="roster-avatar" data-index="5" aria-label="Risa Kartika">
+              <img src="assets/member_0000s_0001_Layer11.png" alt="Risa Kartika">
+            </button>
+            <button class="roster-avatar" data-index="6" aria-label="Nadia Putri">
+              <img src="assets/member_0000s_0000_Layer12.png" alt="Nadia Putri">
+            </button>
+          </div>
+
+          <!-- Featured Bio Display -->
+          <div class="team-featured" id="teamFeatured">
+            <div class="featured-ring">
+              <img id="featuredImg" src="assets/member_0000s_0006_Layer3.png" alt="Featured Member">
+            </div>
+            <div class="featured-info-box">
+              <h3 id="featuredName">Budi Santoso</h3>
+              <div class="role-wrapper">
+                <span class="role-badge" id="featuredRole">Lead Illustrator &amp; Art Director</span>
+              </div>
+              <p id="featuredBio">Mengatur arah visual, konsep karakter, dan menciptakan gaya seni khas Meraki Studio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================== -->
+  <!-- EXTRA: NILAI & BUDAYA TIM                   -->
+  <!-- ========================================== -->
+  <section class="page-extra">
+    <div class="wrap">
+      <div class="sec-head-light reveal">
+        <div class="eyebrow">Budaya Kami</div>
+        <h2>Nilai yang kami pegang setiap hari.</h2>
+      </div>
+      <div class="info-grid culture-grid reveal-group">
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-people-arrows"></i></div>
+          <h3>Kolaborasi</h3>
+          <p>Setiap disiplin bekerja saling terhubung, bukan dalam silo terpisah.</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Kreativitas</h3>
+          <p>Ide-ide segar selalu diberi ruang, sekecil apa pun sumbernya.</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-hammer"></i></div>
+          <h3>Craftsmanship</h3>
+          <p>Detail kecil diperhatikan karena itu yang membedakan karya baik dan karya hebat.</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Terus Berkembang</h3>
+          <p>Belajar hal baru dan bereksperimen adalah bagian dari keseharian tim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- EXTRA: BERGABUNG DENGAN TIM                 -->
+  <!-- ========================================== -->
+  <section class="page-extra">
+    <div class="wrap">
+      <div class="sec-head-light reveal">
+        <div class="eyebrow">Karier</div>
+        <h2>Tertarik bergabung dengan Meraki Studio?</h2>
+        <p>Kami selalu terbuka mengobrol dengan illustrator, developer, designer, dan kreator lain yang bersemangat membangun karya.</p>
+        <div style="margin-top: 20px;">
+          <button class="btn solid open-contact-trigger">Hubungi Tim Kami</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================== -->
+  <!-- SLIDE-IN CONTACT DRAWER (KANAN KE KIRI)    -->
+  <!-- ========================================== -->
+  <div class="contact-drawer-overlay" id="contactOverlay"></div>
+  <aside class="contact-drawer" id="contactDrawer" aria-hidden="true">
+    <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Form Kontak">&times;</button>
+    
+    <div class="drawer-content">
+      <div class="eyebrow">Contact Person</div>
+      <h2>Mari mulai obrolan project Anda.</h2>
+      <p>Ceritakan ide atau kebutuhan Anda, kami akan segera merespons.</p>
+
+      <form class="contactform">
+        <div class="field">
+          <label for="nm">Nama</label>
+          <input id="nm" type="text" placeholder="Nama Anda" required>
+        </div>
+        <div class="field">
+          <label for="em">Email</label>
+          <input id="em" type="email" placeholder="email@contoh.com" required>
+        </div>
+        <div class="field">
+          <label for="ms">Pesan</label>
+          <textarea id="ms" placeholder="Ceritakan project Anda..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
+      </form>
+
+      <div class="drawer-info">
+        <div class="info-item">
+          <span>Email</span>
+          <a href="mailto:hello@merakistudio.id">hello@merakistudio.id</a>
+        </div>
+        <div class="info-item">
+          <span>Telepon</span>
+          <span>+62 812-3456-7890</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================== -->
+  <!-- SITE FOOTER (MULTI-KOLOM GELAP)            -->
+  <!-- ========================================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <!-- Kolom Brand -->
+        <div class="footer-col brand-col">
+          <h3>MERAKI STUDIO</h3>
+          <p>Crafting immersive digital experiences across the universe.</p>
+          <a href="mailto:contact@merakistudio.id" class="footer-email">
+            <i class="fa-regular fa-envelope"></i> contact@merakistudio.id
+          </a>
+        </div>
+
+        <!-- Kolom Explore -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="process.html">Process</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" class="open-contact-trigger">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Connect -->
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <p class="social-note">Follow us for updates on our latest projects!</p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <span>© 2026 Meraki Studio. All rights reserved.</span>
+        <span>Made with love in Malang, Indonesia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
