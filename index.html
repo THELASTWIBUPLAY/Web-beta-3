@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meraki Studio — Company Profile</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,13 +19,16 @@
   <!-- ========================================== -->
   <nav class="top">
     <div class="wrap">
-      <a href="index.html" class="brand"><span class="dot"></span>Meraki Studio</a>
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Logo Meraki" class="brand-logo">
+        <img src="assets/studio.png" alt="Meraki Studio" class="brand-text">
+      </a>
       
       <!-- Nav Links Desktop -->
       <div class="navlinks">
         <a href="services.html">Services</a>
         <a href="process.html">Process</a>
-        <a href="games.html">Games</a>
+        <a href="project.html">Project</a>
         <a href="team.html">Team</a>
         <a href="get-started.html">Get Started</a>
         <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
@@ -49,7 +53,7 @@
         <a href="index.html" class="active"><span class="nav-num">01</span> HOME</a>
         <a href="services.html"><span class="nav-num">02</span> SERVICES</a>
         <a href="process.html"><span class="nav-num">03</span> PROCESS</a>
-        <a href="games.html"><span class="nav-num">04</span> GAMES</a>
+        <a href="project.html"><span class="nav-num">04</span> PROJECT</a>
         <a href="team.html"><span class="nav-num">05</span> TEAM</a>
         <a href="get-started.html"><span class="nav-num">06</span> GET STARTED</a>
       </div>
@@ -70,21 +74,19 @@
       </div>
       <div class="wrap content-layer">
         <div class="reveal">
-          <div class="eyebrow">Company Profile</div>
-          <h1>Kami membangun<br><em>karya</em> yang bekerja.</h1>
-          <p class="lead">Studio kreatif yang membantu bisnis tumbuh lewat desain, teknologi, dan strategi yang dipikirkan matang — dari ide sampai rilis.</p>
-          <div class="cta-row">
-            <a href="games.html" class="btn solid">Lihat Project</a>
-            <button class="btn ghost open-contact-trigger">Hubungi Kami</button>
-          </div>
+          
+          <!-- Teks diubah sesuai referensi gambar, namun gaya font tetap minimalis -->
+          <h1>MERAKI<br><em>3D Production Studio</em></h1>
+          <p class="lead">Meraki is an elite force formed to make all humans smile with our work.<br><br>We will always win the battle of creativity to make the audience love the work that we will visualize. Because Meraki will visualize the brief given, into 3D animation according to your expectations.</p>
+
           <div class="hero-stats reveal">
             <div class="stat">
-              <span class="stat-num" data-count="4"><span class="num-val">0</span><span class="stat-suffix">+</span></span>
-              <span class="stat-label">Game Dirilis</span>
+              <span class="stat-num" data-count="100"><span class="num-val">0</span><span class="stat-suffix">+</span></span>
+              <span class="stat-label">Project Dirilis</span>
             </div>
             <div class="stat">
-              <span class="stat-num" data-count="7"><span class="num-val">0</span></span>
-              <span class="stat-label">Spesialis Kreatif</span>
+              <span class="stat-num" data-count="13"><span class="num-val">0</span><span class="stat-suffix">th</span></span>
+              <span class="stat-label">Pengalaman</span>
             </div>
             <div class="stat">
               <span class="stat-text">Malang, ID</span>
@@ -92,96 +94,81 @@
             </div>
           </div>
         </div>
+        
+        <!-- MASKOT / ART DIKEMBALIKAN -->
         <div class="hero-art reveal">
-          <div class="moon"></div>
-          <svg class="hillsvg" viewBox="0 0 400 420" preserveAspectRatio="xMidYMax slice">
-            <path d="M0 300 Q100 240 200 290 T400 260 V420 H0 Z" fill="#276679" opacity="0.9"></path>
-            <path d="M0 350 Q120 300 220 340 T400 320 V420 H0 Z" fill="#142F37"></path>
-          </svg>
+          <img src="assets/kainu.png" alt="Maskot Meraki Studio" class="hero-img">
         </div>
       </div>
     </section>
 
-      <!-- LAYER 2: BEST QUALITY WITH FAST PROGRESS (SERVICES / PIPELINE) -->
-  <section class="stack-section layanan" id="layanan">
-    <div class="bg-wave-layer" style="z-index: 2;">
-      <img src="assets/7.png" alt="Layer 2 Background" class="wave-shape">
-    </div>
-    <div class="wrap content-layer">
-      <div class="sec-head reveal text-center">
-        <h2>Best Quality with Fast Progress</h2>
-        <p class="service-lead">
-          Have you ever worked with a studio that can complete an animation production from brief to compose with a duration of 1 minute in just 15 days ? Come work with us.
-        </p>
+  <!-- LAYER 2: BEST QUALITY WITH FAST PROGRESS (SERVICES) -->
+    <section class="stack-section layanan" id="layanan">
+      <div class="bg-wave-layer" style="z-index: 2;">
+        <img src="assets/7.png" alt="Layer 2 Background" class="wave-shape">
       </div>
-
-      <!-- 4 Pipeline Columns -->
-      <div class="pipeline-grid reveal-group">
-        
-        <!-- 1. Concept & Idea -->
-        <div class="pipeline-col reveal">
-          <div class="pipeline-icon">
-            <i class="fa-solid fa-desktop"></i>
-          </div>
-          <h3 class="pipeline-title">CONCEPT &amp; IDEA</h3>
-          <div class="pipeline-card">
-            <ul>
-              <li>Scriptwriter</li>
-              <li>Storyboard</li>
-              <li>Animatic</li>
-            </ul>
-          </div>
+      <div class="wrap content-layer">
+        <!-- Eyebrow dihapus agar lebih rapi sesuai permintaan -->
+        <div class="sec-head reveal text-center">
+          <h2>Best Quality with Fast Progress</h2>
+          <p class="service-lead">
+            Have you ever worked with a studio that can complete an animation production from brief to compose with a duration of 1 minute in just 15 days ? Come work with us.
+          </p>
         </div>
 
-        <!-- 2. Pre-Production -->
-        <div class="pipeline-col reveal">
-          <div class="pipeline-icon">
-            <i class="fa-solid fa-cube"></i>
+        <div class="pipeline-grid reveal-group">
+          <!-- 1. Concept & Idea -->
+          <div class="pipeline-col reveal">
+            <div class="pipeline-icon"><i class="fa-solid fa-desktop"></i></div>
+            <h3 class="pipeline-title">CONCEPT &amp; IDEA</h3>
+            <div class="pipeline-card center-card-text">
+              <ul>
+                <li>Scriptwriter</li>
+                <li>Storyboard</li>
+                <li>Animatic</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="pipeline-title">PRE - PRODUCTION</h3>
-          <div class="pipeline-card">
-            <ul>
-              <li>Asst Character</li>
-              <li>Rigging</li>
-              <li>Asst BG</li>
-              <li>Asst Props</li>
-            </ul>
+          <!-- 2. Pre-Production -->
+          <div class="pipeline-col reveal">
+            <div class="pipeline-icon"><i class="fa-solid fa-cube"></i></div>
+            <h3 class="pipeline-title">PRE - PRODUCTION</h3>
+            <div class="pipeline-card center-card-text">
+              <ul>
+                <li>Asst Character</li>
+                <li>Rigging</li>
+                <li>Asst BG</li>
+                <li>Asst Props</li>
+              </ul>
+            </div>
+          </div>
+          <!-- 3. Production -->
+          <div class="pipeline-col reveal">
+            <div class="pipeline-icon"><i class="fa-solid fa-bezier-curve"></i></div>
+            <h3 class="pipeline-title">PRODUCTION</h3>
+            <div class="pipeline-card center-card-text">
+              <ul>
+                <li>Layout</li>
+                <li>3D Animation</li>
+              </ul>
+            </div>
+          </div>
+          <!-- 4. Post-Production -->
+          <div class="pipeline-col reveal">
+            <div class="pipeline-icon"><i class="fa-solid fa-clapperboard"></i></div>
+            <h3 class="pipeline-title">POST - PRODUCTION</h3>
+            <div class="pipeline-card center-card-text">
+              <ul>
+                <li>Setup Lighting</li>
+                <li>Render</li>
+                <li>3D Vfx</li>
+                <li>Compose</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <!-- 3. Production -->
-        <div class="pipeline-col reveal">
-          <div class="pipeline-icon">
-            <i class="fa-solid fa-bezier-curve"></i>
-          </div>
-          <h3 class="pipeline-title">PRODUCTION</h3>
-          <div class="pipeline-card">
-            <ul>
-              <li>Layout</li>
-              <li>3D Animation</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 4. Post-Production -->
-        <div class="pipeline-col reveal">
-          <div class="pipeline-icon">
-            <i class="fa-solid fa-clapperboard"></i>
-          </div>
-          <h3 class="pipeline-title">POST - PRODUCTION</h3>
-          <div class="pipeline-card">
-            <ul>
-              <li>Setup Lighting</li>
-              <li>Render</li>
-              <li>3D Vfx</li>
-              <li>Compose</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- LAYER 3: CARA KERJA / HOW WE WORK -->
     <section class="stack-section howwework" id="howwework">
@@ -189,79 +176,121 @@
         <img src="assets/2.png" alt="Layer 3 Background" class="wave-shape">
       </div>
       <div class="wrap content-layer">
-        <div class="sec-head reveal">
-          <div class="eyebrow">Cara Kerja</div>
+        <div class="sec-head reveal text-center">
           <h2>How We Work!</h2>
         </div>
-        <div class="steps reveal-group">
-          <div class="step reveal"><span class="num">01</span><h3>Choose The Fighter</h3><p>Choose! What kind of service you want to get from us?</p></div>
-          <div class="step reveal"><span class="num">02</span><h3>Let&rsquo;s Have a Deal</h3><p>We will provide the best price for the cooperation we will do, with terms that can be agreed upon.</p></div>
-          <div class="step reveal"><span class="num">03</span><h3>Brief &amp; Reference</h3><p>Let&rsquo;s have a meeting to talk about the brief that we will soon work on accurately.</p></div>
-          <div class="step reveal"><span class="num">04</span><h3>Count on us!</h3><p>We will do the tasks you give with the agreed time, always report at every stage, and never continue before there&rsquo;s an order from you.</p></div>
+        <!-- Class diubah menjadi steps-vertical untuk list menurun -->
+        <div class="steps-vertical reveal-group">
+          <div class="step-v reveal">
+            <span class="num">01</span>
+            <div class="step-text">
+              <h3>Choose The Fighter</h3>
+              <p>Choose! What kind of service you want to get from us?</p>
+            </div>
+          </div>
+          <div class="step-v reveal">
+            <span class="num">02</span>
+            <div class="step-text">
+              <h3>Let&rsquo;s Have a Deal</h3>
+              <p>We will provide the best price for the cooperation we will do, with terms that can be agreed upon.</p>
+            </div>
+          </div>
+          <div class="step-v reveal">
+            <span class="num">03</span>
+            <div class="step-text">
+              <h3>Brief &amp; Reference</h3>
+              <p>Let&rsquo;s have a meeting to talk about the brief that we will soon work on accurately.</p>
+            </div>
+          </div>
+          <div class="step-v reveal">
+            <span class="num">04</span>
+            <div class="step-text">
+              <h3>Count on us!</h3>
+              <p>We will do the tasks you give with the agreed time, always report at every stage, and never continue before there&rsquo;s an order from you.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- LAYER 4: GAME CAROUSEL -->
+    <!-- LAYER 4: PROJECT CAROUSEL -->
     <section class="stack-section projects" id="project">
       <div class="bg-wave-layer" style="z-index: 4;">
         <img src="assets/4.png" alt="Layer 4 Background" class="wave-shape">
       </div>
       <div class="wrap content-layer">
         <div class="sec-head reveal">
-          <div class="eyebrow">Game Library</div>
-          <h2>Koleksi game pilihan kami.</h2>
-          <p>Geser ke samping untuk menjelajahi karya game unggulan kami.</p>
+          <h2>Koleksi project pilihan kami.</h2>
+          <p>Geser ke samping untuk menjelajahi karya unggulan kami.</p>
         </div>
 
         <div class="carousel-container reveal">
           <button class="carousel-nav prev" id="prevBtn" aria-label="Sebelumnya">❮</button>
           <div class="carousel-track" id="gameTrack">
-            <!-- Game 1 -->
+            <!-- Project 1 -->
             <div class="game-card">
               <div class="proj-thumb">
-                <span class="game-tag">RPG Adventure</span>
-                <img src="assets/game2.jpeg" alt="Stone Guardian" class="game-img">
+                <span class="game-tag">3D Animation</span>
+                <img src="assets/game2.jpeg" alt="Project 1" class="game-img">
               </div>
               <div class="proj-body">
                 <h3>Stone Guardian</h3>
-                <p>Petualangan epik di dunia di mana bebatuan purba bangkit dan memiliki nyawa.</p>
+                <p>Visualisasi 3D epik di dunia di mana bebatuan purba bangkit.</p>
               </div>
             </div>
-
-            <!-- Game 2 -->
+            <!-- Project 2 -->
             <div class="game-card">
               <div class="proj-thumb">
-                <span class="game-tag">Mobile Puzzle</span>
-                <img src="assets/game2.jpeg" alt="Jelly Builders" class="game-img">
+                <span class="game-tag">Modeling</span>
+                <img src="assets/game2.jpeg" alt="Project 2" class="game-img">
               </div>
               <div class="proj-body">
                 <h3>Jelly Builders</h3>
-                <p>Susun blok jelly setinggi mungkin dalam game berbasis fisika yang santai.</p>
+                <p>Karakter 3D berbasis fisika dengan material jelly yang realistis.</p>
               </div>
             </div>
-
-            <!-- Game 3 -->
+            <!-- Project 3 -->
             <div class="game-card">
               <div class="proj-thumb">
-                <span class="game-tag">Action Arcade</span>
-                <img src="assets/game2.jpeg" alt="Space Candy" class="game-img">
+                <span class="game-tag">VFX</span>
+                <img src="assets/game2.jpeg" alt="Project 3" class="game-img">
               </div>
               <div class="proj-body">
                 <h3>Space Candy</h3>
-                <p>Aksi tembak-menembak antariksa klasik dengan balutan warna-warni cerah.</p>
+                <p>Efek visual antariksa dengan balutan warna-warni cerah.</p>
               </div>
             </div>
-
-            <!-- Game 4 -->
+            <!-- Project 4 -->
             <div class="game-card">
               <div class="proj-thumb">
-                <span class="game-tag">Tactical Co-op</span>
-                <img src="assets/game2.jpeg" alt="Echoes of Astra" class="game-img">
+                <span class="game-tag">Cinematic</span>
+                <img src="assets/game2.jpeg" alt="Project 4" class="game-img">
               </div>
               <div class="proj-body">
                 <h3>Echoes of Astra</h3>
-                <p>Game strategi kooperatif menembus reruntuhan magis dan menghadapi monster kegelapan.</p>
+                <p>Animasi sinematik menembus reruntuhan magis dan monster kegelapan.</p>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">Environment</span>
+                <img src="assets/game2.jpeg" alt="Project 5" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Desert Warfare</h3>
+                <p>Desain environment gurun pasir yang detail untuk kebutuhan produksi.</p>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="game-card">
+              <div class="proj-thumb">
+                <span class="game-tag">Rigging</span>
+                <img src="assets/game2.jpeg" alt="Project 6" class="game-img">
+              </div>
+              <div class="proj-body">
+                <h3>Mecha Squad</h3>
+                <p>Sistem rigging kompleks untuk karakter robot mekanik kelas berat.</p>
               </div>
             </div>
           </div>
@@ -277,7 +306,6 @@
       </div>
       <div class="wrap content-layer">
         <div class="sec-head reveal">
-          <div class="eyebrow">Daftar Tim</div>
           <h2>Orang-orang di balik studio.</h2>
           <p>Pilih salah satu profil untuk melihat peran dan karya mereka.</p>
         </div>
@@ -332,7 +360,6 @@
       </div>
       <div class="wrap content-layer">
         <div class="cta-inner reveal">
-          <div class="eyebrow">Mulai Sekarang</div>
           <h2>Siap membangun karya berikutnya bersama kami?</h2>
           <p>Ceritakan ide Anda, dan mari kita wujudkan bersama tim Meraki Studio.</p>
           <button class="btn solid btn-cta-contact open-contact-trigger">Hubungi Kami Sekarang</button>
@@ -350,7 +377,6 @@
     <button class="drawer-close" id="closeDrawerBtn" aria-label="Tutup Form Kontak">&times;</button>
     
     <div class="drawer-content">
-      <div class="eyebrow">Contact Person</div>
       <h2>Mari mulai obrolan project Anda.</h2>
       <p>Ceritakan ide atau kebutuhan Anda, kami akan segera merespons.</p>
 
@@ -363,9 +389,30 @@
           <label for="em">Email</label>
           <input id="em" type="email" placeholder="email@contoh.com" required>
         </div>
+        
+        <!-- Field Baru: Inquiry Type (Dropdown) -->
+        <div class="field">
+          <label for="inq">Tipe Inquiry</label>
+          <select id="inq" required>
+            <option value="" disabled selected>Pilih jenis pesan...</option>
+            <option value="general">General Inquiry</option>
+            <option value="collab">Collaboration / Partnership</option>
+            <option value="services">3D Production Services</option>
+            <option value="careers">Careers & Hiring</option>
+            <option value="media">Press & Media</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Field Baru: Subject -->
+        <div class="field">
+          <label for="sub">Subjek</label>
+          <input id="sub" type="text" placeholder="Topik pesan Anda" required>
+        </div>
+
         <div class="field">
           <label for="ms">Pesan</label>
-          <textarea id="ms" placeholder="Ceritakan project Anda..." required></textarea>
+          <textarea id="ms" placeholder="Ceritakan detailnya di sini..." required></textarea>
         </div>
         <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
       </form>
@@ -373,11 +420,11 @@
       <div class="drawer-info">
         <div class="info-item">
           <span>Email</span>
-          <a href="mailto:hello@merakistudio.id">hello@merakistudio.id</a>
+          <a href="mailto:febri.meraki@gmail.com">febri.meraki@gmail.com</a>
         </div>
         <div class="info-item">
           <span>Telepon</span>
-          <span>+62 812-3456-7890</span>
+          <span>+62 821-4371-4930</span>
         </div>
       </div>
     </div>
@@ -393,8 +440,8 @@
         <div class="footer-col brand-col">
           <h3>MERAKI STUDIO</h3>
           <p>Crafting immersive digital experiences across the universe.</p>
-          <a href="mailto:contact@merakistudio.id" class="footer-email">
-            <i class="fa-regular fa-envelope"></i> contact@merakistudio.id
+          <a href="mailto:febri.meraki@gmail.com" class="footer-email">
+            <i class="fa-regular fa-envelope"></i> febri.meraki@gmail.com
           </a>
         </div>
 
@@ -402,7 +449,7 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="games.html">Games</a></li>
+            <li><a href="project.html">Project</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="process.html">Process</a></li>
           </ul>

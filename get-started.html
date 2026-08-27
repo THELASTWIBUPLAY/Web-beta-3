@@ -11,22 +11,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-inner">
 
   <!-- ========================================== -->
   <!-- TOP NAVIGATION (DARK GLASS / TEMBUS PANDANG) -->
   <!-- ========================================== -->
   <nav class="top">
     <div class="wrap">
-      <a href="index.html" class="brand"><span class="dot"></span>Meraki Studio</a>
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Logo Meraki" class="brand-logo">
+        <img src="assets/studio.png" alt="Meraki Studio" class="brand-text">
+      </a>
       
       <!-- Nav Links Desktop -->
       <div class="navlinks">
         <a href="services.html">Services</a>
         <a href="process.html">Process</a>
-        <a href="games.html">Games</a>
+        <a href="project.html">Project</a>
         <a href="team.html">Team</a>
-        <a href="get-started.html" class="active">Get Started</a>
+        <a href="get-started.html">Get Started</a>
         <button class="nav-contact-btn open-contact-trigger">CONTACT US ➔</button>
       </div>
 
@@ -49,7 +52,7 @@
         <a href="index.html"><span class="nav-num">01</span> HOME</a>
         <a href="services.html"><span class="nav-num">02</span> SERVICES</a>
         <a href="process.html"><span class="nav-num">03</span> PROCESS</a>
-        <a href="games.html"><span class="nav-num">04</span> GAMES</a>
+        <a href="project.html"><span class="nav-num">04</span> PROJECT</a>
         <a href="team.html"><span class="nav-num">05</span> TEAM</a>
         <a href="get-started.html" class="active"><span class="nav-num">06</span> GET STARTED</a>
       </div>
@@ -165,9 +168,30 @@
           <label for="em">Email</label>
           <input id="em" type="email" placeholder="email@contoh.com" required>
         </div>
+        
+        <!-- Field Baru: Inquiry Type (Dropdown) -->
+        <div class="field">
+          <label for="inq">Tipe Inquiry</label>
+          <select id="inq" required>
+            <option value="" disabled selected>Pilih jenis pesan...</option>
+            <option value="general">General Inquiry</option>
+            <option value="collab">Collaboration / Partnership</option>
+            <option value="services">3D Production Services</option>
+            <option value="careers">Careers & Hiring</option>
+            <option value="media">Press & Media</option>
+            <option value="other">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Field Baru: Subject -->
+        <div class="field">
+          <label for="sub">Subjek</label>
+          <input id="sub" type="text" placeholder="Topik pesan Anda" required>
+        </div>
+
         <div class="field">
           <label for="ms">Pesan</label>
-          <textarea id="ms" placeholder="Ceritakan project Anda..." required></textarea>
+          <textarea id="ms" placeholder="Ceritakan detailnya di sini..." required></textarea>
         </div>
         <button type="submit" class="btn btn-drawer-submit">Kirim Pesan</button>
       </form>
@@ -175,7 +199,7 @@
       <div class="drawer-info">
         <div class="info-item">
           <span>Email</span>
-          <a href="mailto:hello@merakistudio.id">hello@merakistudio.id</a>
+          <a href="mailto:febri.meraki@gmail.com">febri.meraki@gmail.com</a>
         </div>
         <div class="info-item">
           <span>Telepon</span>
@@ -195,8 +219,8 @@
         <div class="footer-col brand-col">
           <h3>MERAKI STUDIO</h3>
           <p>Crafting immersive digital experiences across the universe.</p>
-          <a href="mailto:contact@merakistudio.id" class="footer-email">
-            <i class="fa-regular fa-envelope"></i> contact@merakistudio.id
+          <a href="mailto:febri.meraki@gmail.com" class="footer-email">
+            <i class="fa-regular fa-envelope"></i> febri.meraki@gmail.com
           </a>
         </div>
 
@@ -204,7 +228,7 @@
         <div class="footer-col">
           <h4>Explore</h4>
           <ul>
-            <li><a href="games.html">Games</a></li>
+            <li><a href="project.html">Project</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="process.html">Process</a></li>
           </ul>

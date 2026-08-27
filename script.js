@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Risa Kartika",
       role: "Technical & Engine Director",
       bio: "Bertanggung jawab atas arsitektur performa, kestabilan engine, dan pipeline integrasi.",
-      img: "assets/member_0000s_0001_Layer11.png"
+      img: "assets/member_0000s_0005_Layer6.png"
     },
     {
       name: "Gatot Prasetyo",
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Arif Hidayat",
       role: "3D & Motion Artist",
       bio: "Menghidupkan model karakter lewat rigging presisi dan simulasi animasi yang halus.",
-      img: "assets/member_0000s_0005_Layer6.png"
+      img: "assets/member_0000s_0001_Layer11.png"
     },
     {
       name: "Nadia Putri",
