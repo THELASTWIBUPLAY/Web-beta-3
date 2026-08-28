@@ -687,7 +687,7 @@ nav.top .wrap {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  padding: 8px 4px 20px;
+  padding: 30px 10px 40px;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   cursor: grab;
@@ -702,16 +702,27 @@ nav.top .wrap {
   scroll-snap-align: start;
   background: #FFFFFF;
   border-radius: 20px;
-  overflow: hidden;
+  overflow: hidden; /* Ini untuk menahan gambar di dalam card, bukan memotong keseluruhan card */
   display: flex;
   flex-direction: column;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform .3s ease, box-shadow .3s ease;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
 }
 
-.game-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+/* Card Ganjil (Ke-1, ke-3, ke-5) miring ke KIRI (-3 derajat) */
+.game-card:nth-child(odd):hover {
+  transform: translateY(-15px) rotate(-2deg) scale(1.03) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+/* Card Genap (Ke-2, ke-4, ke-6) miring ke KANAN (3 derajat) */
+.game-card:nth-child(even):hover {
+  transform: translateY(-15px) rotate(2deg) scale(1.03) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .proj-thumb {
@@ -777,7 +788,7 @@ nav.top .wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
+  z-index: 20;
   transition: all 0.2s ease;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
@@ -2128,4 +2139,109 @@ body.page-inner .bg-wave-layer .wave-shape {
 }
 .hero-art::after {
   display: none !important; 
+}
+
+/* ==========================================================================
+   EXTRA: GET STARTED TIMELINE (KREATIF)
+   ========================================================================== */
+.steps-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  position: relative;
+  max-width: 1000px;
+  margin: 70px auto 0; /* Margin atas ditambah menjadi 70px agar tidak mendempet */
+}
+
+/* Garis putus-putus penghubung di belakang */
+.steps-timeline::before {
+  content: "";
+  position: absolute;
+  top: 40px; 
+  left: 15%;
+  right: 15%;
+  height: 3px;
+  background: repeating-linear-gradient(to right, var(--terracotta) 0, var(--terracotta) 10px, transparent 10px, transparent 20px);
+  z-index: 0;
+  opacity: 0.25;
+}
+
+.steps-timeline .step {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 50px 30px 35px; /* Padding atas lebih besar untuk angka */
+  border: none;
+  box-shadow: 0 12px 30px rgba(20, 47, 55, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+}
+
+/* Membuat kotak tengah sedikit turun (Staggered Effect) */
+.steps-timeline .step:nth-child(2) {
+  transform: translateY(30px);
+}
+
+.steps-timeline .step:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(20, 47, 55, 0.15);
+}
+.steps-timeline .step:nth-child(2):hover {
+  transform: translateY(22px); /* Penyesuaian hover untuk kotak tengah */
+}
+
+/* Desain Angka Melayang di Luar Kotak */
+.steps-timeline .step .num {
+  background: var(--terracotta);
+  color: #FFFFFF;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-style: italic;
+  position: absolute;
+  top: -36px; /* Posisi melayang di atas batas kotak */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(39, 102, 121, 0.25);
+  border: 6px solid var(--cream);
+}
+
+.steps-timeline .step h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.steps-timeline .step p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+  .steps-timeline {
+    grid-template-columns: 1fr;
+    gap: 60px; /* Jarak ekstra untuk angka yang melayang */
+    margin-top: 50px;
+  }
+  .steps-timeline::before {
+    display: none; /* Sembunyikan garis penghubung di layar kecil */
+  }
+  .steps-timeline .step:nth-child(2) {
+    transform: translateY(0); /* Matikan efek turun di mobile agar rapi */
+  }
+  .steps-timeline .step:nth-child(2):hover {
+    transform: translateY(-8px);
+  }
 }
