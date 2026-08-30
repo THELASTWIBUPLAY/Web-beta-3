@@ -2157,9 +2157,12 @@ body.page-inner .bg-wave-layer .wave-shape {
 .steps-timeline::before {
   content: "";
   position: absolute;
-  top: 40px; 
-  left: 15%;
-  right: 15%;
+  /* Grid sejajar dengan ujung atas kotak. Lingkaran ada di atas kotak. 
+     Titik 0 adalah tengah lingkaran. -1.5px mengkompensasi tebal garis (3px). */
+  top: -1.5px; 
+  /* 16.66% adalah titik tengah kolom pertama (1/6) dan kolom ketiga */
+  left: 16.66%;
+  right: 16.66%;
   height: 3px;
   background: repeating-linear-gradient(to right, var(--terracotta) 0, var(--terracotta) 10px, transparent 10px, transparent 20px);
   z-index: 0;
@@ -2179,19 +2182,12 @@ body.page-inner .bg-wave-layer .wave-shape {
   align-items: center;
   text-align: center;
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
-}
-
-/* Membuat kotak tengah sedikit turun (Staggered Effect) */
-.steps-timeline .step:nth-child(2) {
-  transform: translateY(30px);
+  height: 100%;
 }
 
 .steps-timeline .step:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(20, 47, 55, 0.15);
-}
-.steps-timeline .step:nth-child(2):hover {
-  transform: translateY(22px); /* Penyesuaian hover untuk kotak tengah */
 }
 
 /* Desain Angka Melayang di Luar Kotak */
