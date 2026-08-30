@@ -1924,6 +1924,9 @@ form.contactform { display: flex; flex-direction: column; gap: 14px; }
     background: linear-gradient(160deg, #97DFD9, #279CBD);
     overflow: hidden;
     box-shadow: 0 16px 36px rgba(39, 102, 121, 0.12);
+    order: -1; /* Nilai minus memaksanya tampil sebelum teks */
+    width: 100%;
+    margin-bottom: 16px; /* Memberi jarak nafas antara video dan judul "MERAKI" di bawahnya */
   }
 
   .hero-art .moon {
@@ -2271,10 +2274,11 @@ body.page-inner .bg-wave-layer .wave-shape {
 /* Penyesuaian khusus Mobile */
 @media (max-width: 768px) {
   .hero-video-wrapper {
-    border-radius: 20px;
-    /* Jika di desktop 16:9, di mobile bisa tetap 16:9 atau menyesuaikan */
-    aspect-ratio: 16/9; 
-    margin-top: 20px;
+    width: 100%; /* Jangan biarkan 140% di mobile */
+    transform: none; /* Membatalkan efek geser (translate) menjorok ke kanan atas */
+    margin-top: 0;
+    aspect-ratio: 16/9; /* Pastikan rasio tetap bagus */
+    border-radius: 16px; /* Sudut membulat yang lebih pas untuk layar HP */
   }
   
   /* Hilangkan gradient biru/hijau dan bulan animasi bawaan maskot lama di versi mobile */
