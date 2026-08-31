@@ -1893,6 +1893,10 @@ form.contactform { display: flex; flex-direction: column; gap: 14px; }
     overflow: hidden;
   }
 
+  .stack-section:not(.hero) {
+    margin-top: -40px !important; /* Menarik tiap section ke atas sebanyak 25px */
+  }
+
   .wrap {
     padding: 0 18px !important;
   }
@@ -2197,6 +2201,30 @@ body.page-inner .bg-wave-layer .wave-shape {
     display: block !important;
     overflow: visible !important;
     padding: 60px 0 40px !important; /* Mengembalikan ruang atas-bawah yang aman */
+  }
+
+  /* ==========================================
+     MEMPERBESAR TEKS CTA DI BAGIAN PALING BAWAH
+     ========================================== */
+  .page-extra .sec-head-light:has(.btn) {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .page-extra .sec-head-light:has(.btn) h2 {
+    font-size: 1.8rem !important; /* Diperbesar agar kembali mencolok */
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .page-extra .sec-head-light:has(.btn) p {
+    font-size: 0.9rem !important; /* Disesuaikan agar proporsional */
+    line-height: 1.5 !important;
+  }
+  
+  .page-extra .sec-head-light .btn {
+    padding: 12px 24px !important;
+    font-size: 0.85rem !important;
   }
 
   /* ==========================================
